@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav a:hover {
-	color: #ccc;
+	color: #7776bc;
 }
 
 .logo {
@@ -147,13 +147,52 @@ i.bootstrap:hover {
 
 footer {
 	background-color: #23232e;
-	height: 50px;
-	text-align: center;
-	padding-top: 25px;
+	height: 55px;
+	text-align: left;
+	padding: 25px 0 0 30px;
 }
 
 footer span {
 	color: #7776bc;
+}
+
+footer p {
+	float: left;
+}
+
+footer ul {
+	float: right;
+	padding-right: 30px;
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	display: block;
+	margin-left: 30px;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
+
+footer i {
+	font-size: 2em;
+}
+
+.linkedin:hover {
+	color: #0271AE;
+	transform: scale(1.1);
+}
+
+.instagram:hover {
+	color: #C501A9;
+	transform: scale(1.1);
+}
+
+.github:hover {
+	color: #CCCCCC;
+	transform: scale(1.1);
 }
 
 .projetos {
@@ -173,17 +212,17 @@ footer span {
 	background: #23232e;
 	margin: 10px;
 	border-radius: 6px;
-	transition-timing-function: linear;
-	transition-duration: 0.3s;
+	transition: 0.1s;
 }
 
-.projetos .projeto1:hover, .projeto2:hover, .projeto3:hover {
+.projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover {
 	width: 310px;
 	height: 310px;
-	transform: translateX(0);
+	transform: scale(1.04);
+	border-radius: 5px;
 }
 
-.projeto4, .projeto5, .projeto6 { /* Apagar quando finalizar os outros projetos */
+.projeto5, .projeto6 { /* Apagar quando finalizar os outros projetos */
 	color: #fff;
 	font-size: 1.8em;
 	display: flex;
@@ -191,6 +230,7 @@ footer span {
 	justify-content: center;
 	font-family: 'Amatic SC', cursive;
 }
+
 
 
 
