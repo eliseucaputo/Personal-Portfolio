@@ -37,6 +37,7 @@ nav a {
 	text-decoration: none;
 	letter-spacing: 3px;
 	margin: 5px;
+	transition-duration: 0.3s;
 }
 
 nav ul li a {
@@ -93,6 +94,11 @@ h2.border-projects {
 	padding-bottom: 15px;
 }
 
+h2.border-contact {
+	border-bottom: 1px solid gray;
+	padding-bottom: 15px;
+}
+
 .box1 {
 	width: 80%;
 	height: 300px;
@@ -100,6 +106,35 @@ h2.border-projects {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+div.container input {
+	margin-bottom: 5px;
+	width: 180px;
+	height: 25px;
+	outline: none;
+}
+
+textarea {
+	max-width: 300px;
+	min-width: 280px;
+	min-height: 180px;
+	outline: none;
+}
+
+div.container button {
+	padding: 10px;
+	width: 100px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	transition-duration: 0.3s;
+	margin-top: 5px;
+}
+
+div.container button:hover {
+	background-color: #7776bc;
 }
 
 i {
@@ -166,14 +201,26 @@ footer i {
 	font-size: 2em;
 }
 
+.linkedin {
+	transition-duration: 0.3s;
+}
+
 .linkedin:hover {
 	color: #0271AE;
 	transform: scale(1.1);
 }
 
+.instagram {
+	transition-duration: 0.3s;
+}
+
 .instagram:hover {
 	color: #C501A9;
 	transform: scale(1.1);
+}
+
+.github {
+	transition-duration: 0.3s;
 }
 
 .github:hover {
