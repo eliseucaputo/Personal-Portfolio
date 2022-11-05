@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 		<link rel="stylesheet" media="(max-width: 800px)" href="example.css"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="site.js"></script>
 		<title>My personal portfolio</title>
 	</head>
 	<body>
@@ -25,10 +26,10 @@
 		<main>
 			<div class="container">		
                 <h2 class="border-contact">Contact</h2>    
-                <label for="name">Name:</label><input type="text" id="name" autofocus><br>
-                <label for="e-mail">E-mail:</label><input type="email" name="e-mail" id="e-mail" required="required" placeholder="example@email.com"><br>
+                <label for="name">Name: </label><input type="text" id="name" autofocus><br>
+                <label for="e-mail">E-mail: </label><input type="email" name="e-mail" id="email" required="required" placeholder="example@email.com"><br>
                 <label for="textarea">How can I help you?</label><br><textarea id="textarea"></textarea><br>
-                <button type="submit">Submit</button>
+                <button onclick="submit()" type="submit">Submit</button>
 			</div>
 
 		</main>
