@@ -135,6 +135,7 @@ div.container button {
 
 div.container button:hover {
 	background-color: #7776bc;
+	cursor: pointer;
 }
 
 i {
