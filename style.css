@@ -250,21 +250,13 @@ footer i {
 	transition: 0.1s;
 }
 
-.projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover, .projeto5:hover {
+.projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover, .projeto5:hover, .projeto6:hover {
 	width: 310px;
 	height: 310px;
 	transform: scale(1.04);
 	border-radius: 5px;
 }
 
-.projeto6 { /* Apagar quando finalizar os outros projetos */
-	color: #fff;
-	font-size: 1.8em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-family: 'Amatic SC', cursive;
-}
 
 @media screen and (max-width: 600px) {
 	nav a {
