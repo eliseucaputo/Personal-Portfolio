@@ -16,6 +16,8 @@ body {
 	font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 	background-color: #ccc;
 	color: white;
+	max-width: 1500px;
+	margin: auto;
 }
 
 /* Layout da página */
@@ -241,7 +243,7 @@ footer i {
 	border-radius: 5px;
 }
 
-.projeto1, .projeto2, .projeto3, .projeto4, .projeto5, .projeto6 {
+.projeto1, .projeto2, .projeto3, .projeto4, .projeto5, .projeto6, .projeto7, .projeto8, .projeto9, .projeto10, .projeto11, .projeto12 {
 	width: 300px;
 	height: 300px;
 	background: #23232e;
@@ -250,11 +252,22 @@ footer i {
 	transition: 0.1s;
 }
 
-.projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover, .projeto5:hover, .projeto6:hover {
+.projetos .projeto1:hover, .projeto2:hover, .projeto3:hover, .projeto4:hover, .projeto5:hover, .projeto6:hover, .projeto7:hover {
 	width: 310px;
 	height: 310px;
 	transform: scale(1.04);
 	border-radius: 5px;
+}
+
+.projeto7 p, .projeto8 p, .projeto9 p, .projeto10 p, .projeto11 p, .projeto12 p {  /* Mudar sempre que adicionar algo */
+	color: #fff;	
+	display: flex;
+	height: 300px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	justify-content: center;
+	align-items: center;
 }
 
 @media screen and (max-width: 600px) {
