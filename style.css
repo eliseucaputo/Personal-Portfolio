@@ -270,7 +270,89 @@ footer i {
 	align-items: center;
 }
 
+#btn-mobile { /* aqui */
+	display: none;
+}
+
 @media screen and (max-width: 600px) {
+
+	#menu { /* aqui */
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 150px;
+		width: 100%;
+		background-color: #23232e;
+		height: 0px;
+		transition: 0.3s;
+		overflow-y: hidden;
+	}
+
+	#nav.active #menu { /* aqui */
+		display: flex;
+		height: calc(100vh - 150px);
+		overflow-y: hidden;
+	}
+
+	ul#menu {
+		display: flex;  /* aqui */
+		justify-content: center;
+	}
+
+	ul#menu li a {  /* aqui */
+		margin-top: 30px;
+	}
+
+	#btn-mobile { /* aqui */
+		display: block;
+		display: flex;
+		padding: .5rem 1rem;
+		font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+		color: white;
+	}
+
+	#hamburger { /* aqui */
+		width: 30px;
+		border-top: 2px solid white;
+		transition: 0.3s;
+	}
+
+	#hamburger:hover { /* aqui */
+		border-top-color: #7776bc;
+	}
+	
+	#hamburger:hover::after, #hamburger:hover::before {
+		background-color: #7776bc;
+	}
+
+	#hamburger::after, #hamburger::before { /* aqui */
+		content: '';
+		display: block;
+		margin-top: 5px;
+		width: 30px;
+		height: 2px;
+		background-color: white;
+		transition: 0.3s;
+		position: relative;
+	}
+
+	#nav.active #hamburger { /* aqui */
+		border-top-color: transparent;
+	}
+
+	#nav.active #hamburger::before { /* aqui */
+		transform: rotate(135deg);
+	}
+
+	#nav.active #hamburger::after { /* aqui */
+		transform: rotate(-135deg);
+		top: -7px
+	}
+
 	nav a {
 		display: flex;
 		align-items: stretch;
