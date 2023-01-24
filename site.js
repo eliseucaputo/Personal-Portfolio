@@ -20,8 +20,6 @@ function submit() {
 }
 
 
-
-
 const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu() {
@@ -30,4 +28,24 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu)
+
+
+
+// mostrar e fechar habilidades
+
+function mostrarHabilidade() {
+    let mostrarHtml = document.getElementById('html-habilidade')
+
+    if(mostrarHtml.style.display = 'none') {
+        mostrarHtml.style.display = 'block'
+    }
+}
+
+function fecharHabilidade() {
+    let fecharHtml = document.getElementById('html-habilidade')
+
+    if(fecharHtml.style.display = 'block') {
+        fecharHtml.style.display = 'none'
+    }
+}
 

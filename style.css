@@ -22,6 +22,35 @@ body {
 
 /* Layout da página */
 
+#html-flex, #css-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
+	max-width: 120px;
+}
+
+#html-habilidade, #css-habilidade, #bootstrap-habilidade, #javascript-habilidade, #php-habilidade {
+	display: block;
+}
+
+#html-habilidade {
+	border: 1px solid red;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
 nav {
 	display: flex;
 	justify-content: space-around;
@@ -141,31 +170,46 @@ div.container button:hover {
 }
 
 i {
-	font-size: 10em;
+	font-size: 6em;
 	padding-bottom: 20px;
 }
 
-i.html, i.css, i.bootstrap {
+i.html, i.css, i.bootstrap, i.javascript, i.php {
 	transition-timing-function: linear;
 	transition-duration: 0.3s;
+	cursor: pointer;
+	padding: 20px;
+	border: 1px solid red;
 }
 
 i.html:hover {
 	color: #F75421;
-	font-size: 12em;
+	font-size: 7em;
 	transition: 0.6s;
 	transform: translateX(0);
 }
 
 i.css:hover {
 	color: #2FA1D4;
-	font-size: 12em;
+	font-size: 7em;
 	transition: 0.6s;
 }
 
 i.bootstrap:hover {
 	color: #7610F1;
-	font-size: 12em;
+	font-size: 7em;
+	transition: 0.6s;
+}
+
+i.javascript:hover {
+	color: #F7DF1E;
+	font-size: 7em;
+	transition: 0.6s;
+}
+
+i.php:hover {
+	color: #6A80B2;
+	font-size: 7em;
 	transition: 0.6s;
 }
 
@@ -303,6 +347,11 @@ footer i {
 		margin-top: 30px;
 	}
 
+	.container h2 {
+		margin-bottom: 50px;
+
+	}
+
 	#btn-mobile { /* aqui */
 		display: block;
 		display: flex;
@@ -363,11 +412,6 @@ footer i {
 		flex-direction: column;
 		padding-left: 100px;
 		padding: 135px 0;
-	}
-
-	.html, .css, .bootstrap {
-		margin: 0 auto;
-		font-size: 11em;
 	}
 
 	footer {
