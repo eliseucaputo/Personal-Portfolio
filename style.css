@@ -22,13 +22,11 @@ body {
 
 /* Layout da página */
 
-#html-flex, #css-flex {
+#html-flex, #css-flex, #bootstrap-flex, #javascript-flex, #php-flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
-	max-width: 120px;
 }
 
 #html-habilidade, #css-habilidade, #bootstrap-habilidade, #javascript-habilidade, #php-habilidade {
@@ -36,7 +34,10 @@ body {
 }
 
 #html-habilidade {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
+}
+
+#html-flex i {
 	
 }
 
@@ -174,12 +175,19 @@ i {
 	padding-bottom: 20px;
 }
 
+i.star{
+	font-size: 1em;
+}
+
 i.html, i.css, i.bootstrap, i.javascript, i.php {
 	transition-timing-function: linear;
 	transition-duration: 0.3s;
 	cursor: pointer;
-	padding: 20px;
-	border: 1px solid red;
+	padding: 10px;
+}
+
+i.php {
+	padding: 10px 0px 10px 0px;
 }
 
 i.html:hover {
