@@ -328,7 +328,6 @@ footer i {
 
 @media screen and (max-width: 1200px) {
 	.container > section > .box1 {
-		border: 1px solid red;
 		width: 100%;
 	}
 }
