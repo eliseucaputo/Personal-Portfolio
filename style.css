@@ -326,6 +326,22 @@ footer i {
 	display: none;
 }
 
+@media screen and (max-width: 1200px) {
+	.container > section > .box1 {
+		border: 1px solid red;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 948px) {
+	.container > section > .box1 {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+	}
+}
+
+
 @media screen and (max-width: 600px) {
 
 	#menu { /* aqui */
@@ -357,7 +373,6 @@ footer i {
 
 	.container h2 {
 		margin-bottom: 50px;
-
 	}
 
 	#btn-mobile { /* aqui */
@@ -415,11 +430,16 @@ footer i {
 		align-items: stretch;
 	}
 
-	.box1 {
+	.container > section > .box1 {
 		display: flex;
+		flex-wrap: nowrap;
 		flex-direction: column;
 		padding-left: 100px;
-		padding: 135px 0;
+		padding: 330px 0 290px 0;
+	}
+
+	.box1 div {
+		margin-bottom: 30px;
 	}
 
 	footer {
