@@ -105,10 +105,21 @@ nav a:hover {
 }
 
 .container img.imagem-perfil {
+	animation: img-perfil 2s ease-in-out infinite alternate;
 	border-radius: 150px;
 	display: flex;
 	margin: 0 auto;
 	box-shadow: 2px 2px 8px;
+}
+
+@keyframes img-perfil {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-10px);
+	}
 }
 
 .first-paragraph {
