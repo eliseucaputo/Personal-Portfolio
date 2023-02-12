@@ -157,14 +157,20 @@ div.container input {
 	margin-bottom: 5px;
 	width: 180px;
 	height: 25px;
-	outline: none;
+	border: 1px solid #606060;
+	border-radius: 4px;
+	outline-color: #7776bc;
+	padding-left: 10px;
 }
 
 textarea {
 	max-width: 300px;
 	min-width: 280px;
 	min-height: 180px;
-	outline: none;
+	padding-left: 10px;
+	border-radius: 4px;
+	outline-color: #7776bc;
+	font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 div.container button {
@@ -324,7 +330,25 @@ footer i {
 	border-radius: 5px;
 }
 
-.projeto7 p, .projeto8 p, .projeto9 p, .projeto10 p, .projeto11 p, .projeto12 p {  /* Mudar sempre que adicionar algo */
+.hide {
+	display: none;
+	position: absolute;
+	top: calc(50% - 20px);
+	background-color: #0000009e;
+}
+
+.projetos .projeto1:hover .hide, .projetos .projeto2:hover .hide, .projetos .projeto3:hover .hide, .projetos .projeto4:hover .hide, .projetos .projeto5:hover .hide, .projetos .projeto6:hover .hide, .projetos .projeto7:hover .hide   {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	width: calc(100% - 10px);
+	height: 40px
+}
+
+.projeto8 p, .projeto9 p, .projeto10 p, .projeto11 p, .projeto12 p {  /* Mudar sempre que adicionar algo */
 	color: #fff;	
 	display: flex;
 	height: 300px;
@@ -335,7 +359,7 @@ footer i {
 	align-items: center;
 }
 
-#btn-mobile { /* aqui */
+#btn-mobile {
 	display: none;
 }
 
@@ -356,7 +380,7 @@ footer i {
 
 @media screen and (max-width: 600px) {
 
-	#menu { /* aqui */
+	#menu { 
 		display: block;
 		position: absolute;
 		right: 0;
@@ -368,18 +392,18 @@ footer i {
 		overflow-y: hidden;
 	}
 
-	#nav.active #menu { /* aqui */
+	#nav.active #menu { 
 		display: flex;
 		height: calc(100vh - 150px);
 		overflow-y: hidden;
 	}
 
 	ul#menu {
-		display: flex;  /* aqui */
+		display: flex;
 		justify-content: center;
 	}
 
-	ul#menu li a {  /* aqui */
+	ul#menu li a {  
 		margin-top: 30px;
 	}
 
@@ -387,7 +411,7 @@ footer i {
 		margin-bottom: 50px;
 	}
 
-	#btn-mobile { /* aqui */
+	#btn-mobile {
 		display: block;
 		display: flex;
 		padding: .5rem 1rem;
@@ -399,13 +423,13 @@ footer i {
 		color: white;
 	}
 
-	#hamburger { /* aqui */
+	#hamburger {
 		width: 30px;
 		border-top: 2px solid white;
 		transition: 0.3s;
 	}
 
-	#hamburger:hover { /* aqui */
+	#hamburger:hover { 
 		border-top-color: #7776bc;
 	}
 	
@@ -413,7 +437,7 @@ footer i {
 		background-color: #7776bc;
 	}
 
-	#hamburger::after, #hamburger::before { /* aqui */
+	#hamburger::after, #hamburger::before { 
 		content: '';
 		display: block;
 		margin-top: 5px;
@@ -424,15 +448,15 @@ footer i {
 		position: relative;
 	}
 
-	#nav.active #hamburger { /* aqui */
+	#nav.active #hamburger { 
 		border-top-color: transparent;
 	}
 
-	#nav.active #hamburger::before { /* aqui */
+	#nav.active #hamburger::before { 
 		transform: rotate(135deg);
 	}
 
-	#nav.active #hamburger::after { /* aqui */
+	#nav.active #hamburger::after { 
 		transform: rotate(-135deg);
 		top: -7px
 	}
